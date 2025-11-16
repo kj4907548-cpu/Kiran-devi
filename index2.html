@@ -1,94 +1,147 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
-    <style>
-        body{
-            background-color: rgb(0, 0, 0);
-        }
-p{
-    color: rgb(216, 37, 180);
-}
-.container-fluid{
-    background-color: rgb(229, 195, 69);
-}
-.button{
-    background-color: rgb(60, 166, 241);
-    color: rgb(2, 7, 11);
-    margin-bottom: 10px;
- }
-    </style>
-       
+    <title>menu/grid</title>
 
-    </head>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #d6b18c;
+            font-family: Georgia, serif;
+        }
+        .navbar {
+            background-color: #2b1f14;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+            font-size: 18px;
+        }
+        h1 {
+            font-size: 55px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 40px;
+            color: #2b1f14;
+        }
+        .category-menu a {
+            margin: 0 18px;
+            font-size: 22px;
+            color: #3a2c20;
+            text-decoration: none;
+        }
+        .category-menu a.active {
+            border-bottom: 3px solid #2b1f14;
+            padding-bottom: 4px;
+        }
+        .coffee-card {
+            background-color: #2b1f14;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .coffee-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .coffee-name {
+            font-size: 30px;
+            text-align: center;
+            color: #2b1f14;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .arrow-btn {
+            width: 55px;
+            height: 55px;
+            border: 2px solid #2b1f14;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
 <body>
 
-    
-    
-    <section class="container-fluid">
-        <div class="row1 text-center dark">
-            <h1>OUR BLOGS</h1>
-        </div>
-        </section>
-        <div class="row row-cols-xxl-4 row-cols-xl-3 row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-cols-1">
-            <div class="col text-light">
-                <img src="https://m.media-amazon.com/images/I/81IScK02z0L._UF894,1000_QL80_.jpg"class="img-thumbnail" alt="" width="100%" height="70%">
-            <p> atque cupiditate quam totam laborum. Libero, quibusdam. Facere
-                 sed libero nam labore dolores numquam distinctio nemo, soluta, perspiciatis fugiat dolor illo?</p>
- <!-- <button class="button"> read more</button> -->
-  <button type="button" class="btn btn-outline-primary btn-lg">Primary</button>
-            </div>
-            <div class="col text-light">
-                <img src="https://i.pinimg.com/736x/a9/0f/af/a90faf77eff4dd8e019828d62bd6fac8.jpg"  class="rounded mx-auto d-block" alt="" width="100%" height="%">
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates eius 
-                        laudantium corporis vero unde consequuntur numquam, atque tempora dolor beatae quas
-                         autem </p>
- <!-- <button class="button">read more</button> -->
-  <button type="button" class="btn btn-outline-light btn-lg">Light</button>
+<!-- NAVBAR -->
+ <nav class="navbar navbar-expand-lg py-3 ">
+  <div class="container ">
+    <a class="navbar-brand text-white fs-3">Caffeine</a>
 
-            </div>
-            <div class="cols">
-                <img src="https://sadgirldp.com/wp-content/uploads/Doraemon-Character-Movies.jpeg" alt="" height="70%" width="100%">
-                                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates eius 
-                        laudantium corporis vero unde consequuntur numquam, atque tempora dolor beatae quas
-                         autem </p>
-  <!-- <button class="button">read more</button> -->
-   <button type="button" class="btn btn-outline-success btn-lg">Success</button>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-
-            </div>
-                        <div class="cols">
-                <img src="https://images.alphacoders.com/472/thumb-1920-47271.jpg" alt="" height="70%" width="100%">
-                                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates eius 
-                        laudantium corporis vero unde consequuntur numquam, atque tempora dolor beatae quas
-                         autem </p>
-   <!-- <button class="button">read more</button> -->
-    <button type="button" class="btn btn-outline-danger btn-lg">Danger</button>
-
-
-            </div>
-
-               <div class="cols">
-                <img src="https://e0.pxfuel.com/wallpapers/386/525/desktop-wallpaper-haddi-mera-buddy-episodes-in-tamil-thumbnail.jpg" alt="" height="70%" width="100%">
-                                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates eius 
-                        laudantium corporis vero unde consequuntur numquam, atque tempora dolor beatae quas
-                         autem </p>
-   <!-- <button class="button">read more</button> -->
-    <button type="button" class="btn btn-outline-warning btn-lg">Warning</button>
-
-
-            </div>
-           
-
+    <div class="collapse navbar-collapse " id="navMenu">
+      <ul class="navbar-nav  ms-auto">
+        <li class="nav-item"><a class="nav-link active fs-5" href="main page.html">Home</a></li> 
+                <li class="nav-item"><a class="nav-link active fs-5" href="grid.html">Menu</a></li>         
+        <li class="nav-item"><a class="nav-link active fs-5"href="About.html">About</a></li>      
+        <li class="nav-item"><a class="nav-link active fs-5"href="content.html">Content</a></li>     
                 
+          
+      </ul>
+      
+       <!-- RIGHT-SIDE MODAL BUTTON -->
+      <button type="button" class="btn btn-light text-dark ms-auto" data-bs-toggle="modal" data-bs-target="#kiran">
+        Hellow
+      </button>
+    </div>
+  </div>
+</nav>
 
+<!-- SECTION TITLE -->
+<h1>Best Selling Item</h1>
+
+<!-- CATEGORY MENU -->
+<div class="container text-center category-menu mt-4">
+    <a href="#" class="active">All</a>
+    <a href="#">Black</a>
+    <a href="#">Espresso</a>
+    <a href="#">Doppio</a>
+</div>
+
+<!-- ARROWS -->
+<div class="container d-flex justify-content-between mt-4">
+    <div class="arrow-btn"><span>&larr;</span></div>
+    <div class="arrow-btn"><span>&rarr;</span></div>
+</div>
+
+<!-- COFFEE ITEMS -->
+<div class="container mt-4">
+    <div class="row g-4">
+
+        <div class="col-lg-4 col-md-6">
+            <div class="coffee-card">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHJWaXd42Cyr-r7zcfE9fNW-3icaqtBXgEwkkBd1U5Ggx4kkk7" alt="Cappuccino">
+            </div>
+            <div class="coffee-name">Cappuccino</div>
         </div>
 
-    
-    
+        <div class="col-lg-4 col-md-6">
+            <div class="coffee-card">
+                <img src="https://www.holycowsteak.com/cdn/shop/articles/Thumbnail_bcfc7666-4a15-4b16-817b-830c306488fd_600x600_crop_center.webp?v=1752653280" alt="Americano">
+            </div>
+            <div class="coffee-name">Americano</div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <div class="coffee-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzM8isG9-RaQrYcs2ZCltQOt3JjB8WIYYzgnX3sauigPAqgxJy" alt="Espresso">
+            </div>
+            <div class="coffee-name">Espresso</div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
